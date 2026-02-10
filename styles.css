@@ -1,0 +1,202 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #f5f7fa;
+    line-height: 1.6;
+}
+
+/* NAVBAR */
+.navbar {
+    background: #0b2d4d;
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h2 {
+    color: yellow;
+    margin: 0;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li:hover {
+    color: orange;
+    cursor: pointer;
+}
+
+/* HERO SECTION */
+.hero {
+    background: #ffffff;
+    padding: 60px 40px;
+    display: flex;
+    align-items: center;
+}
+
+.hero-text {
+    width: 60%;
+}
+
+.hero-text h1 {
+    font-size: 40px;
+    color: #0b2d4d;
+    margin-bottom: 20px;
+}
+
+.hero-text span {
+    color: orange;
+}
+
+.hero-text p {
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.btn {
+    padding: 12px 24px;
+    background: #0b2d4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: orange;
+}
+
+.hero-img {
+    width: 40%;
+}
+
+.hero-img img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* SERVICES */
+.services {
+    display: flex;
+    padding: 40px;
+    background: #e9eef3;
+    justify-content: space-around;
+}
+
+.service-box {
+    background: rgba(31, 78, 121, 0.8);
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    width: 30%;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.service-box:hover {
+    transform: translateY(-5px);
+}
+
+.service-box h3 {
+    color: yellow;
+    margin-bottom: 10px;
+}
+
+/* ABOUT SECTION */
+.about {
+    display: flex;
+    padding: 60px 40px;
+    background: white;
+    align-items: center;
+}
+
+.about-text {
+    width: 60%;
+}
+
+.about-text h2 {
+    color: #0b2d4d;
+    margin-bottom: 20px;
+}
+
+.about-img {
+    width: 40%;
+}
+
+.about-img img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* FOOTER */
+.footer {
+    background: #0b2d4d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .hero, .about {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-text, .about-text {
+        width: 100%;
+    }
+    .hero-img, .about-img {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .services {
+        flex-direction: column;
+    }
+    .service-box {
+        width: 100%;
+    }
+    .navbar ul {
+        display: none; /* Simple hide for mobile; could add hamburger menu */
+    }
+}
